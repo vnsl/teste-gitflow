@@ -15,7 +15,7 @@ create table if not exists products (
   	stock int not null,
   	category text not null,
   	price int not null,
-  	description text not null,
-  	image text not null,  
+  	product_description text,
+  	product_image text,  
   	foreign key (user_id) references users (id)
 );
